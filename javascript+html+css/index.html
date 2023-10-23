@@ -5,46 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="calculator">
-        <form>
-          <div class="display">
-            <input type="text" name="display" />
-          </div>
-          <div>
-            <input type="button" value="AC" class="operator" />
-            <input type="button" value="DE" class="operator" />
-            <input type="button" value="." class="operator" />
-            <input type="button" value="/" class="operator" />
-          </div>
-          <div>
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
-            <input type="button" value="*" class="operator" />
-          </div>
-          <div>
-            <input type="button" value="4" />
-            <input type="button" value="5" />
-            <input type="button" value="6" />
-            <input type="button" value="-" class="operator" />
-          </div>
-          <div>
-            <input type="button" value="1" />
-            <input type="button" value="2" />
-            <input type="button" value="3" />
-            <input type="button" value="+" class="operator" />
-          </div>
-          <div>
-            <input type="button" value="00" />
-            <input type="button" value="0" />
-            <input type="button" value="=" class="equal operator" />
-          </div>
-        </form>
+    <div class="calculatorGrid">
+      <div class="output">
+        <div class="previousValue"></div>
+        <div class="currentValue"></div>
       </div>
+      <button class="spanTwo">AC</button>
+      <button>DEL</button>
+      <button data>÷</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>x</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>+</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>-</button>
+      <button>.</button>
+      <button>0</button>
+      <button class="spanTwo">=</button>
     </div>
-    <script src="main.js"></script>
   </body>
 </html>
